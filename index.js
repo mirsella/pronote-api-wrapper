@@ -112,6 +112,10 @@ const password = process.env.password;
     }
 
     send('Messages : ')
+    if (lastdata.messagerie.length === 0) {
+        lastdata.messagerie = data.messagerie
+    }
+    console.log(data.messagerie, lastdata.messagerie)
     for (const message of data.messagerie) {
         for (const lastmessage of lastdata.messagerie) {
             if (new Date(lastmessage.date).getTime() === message.date.getTime() && lastmessage.text === message.text) {
