@@ -5,14 +5,14 @@ specifiers:
   dotenv: 10.0.0
   eslint-plugin-node: 11.1.0
   fs-extra: ^10.0.0
-  pronote-api: git+https://github.com/mirsella/pronote-api
-  telegramnotif: git+https://github.com/mirsella/telegramnotif
+  pronote-api: github:mirsella/pronote-api
+  telegramnotif: github:mirsella/telegramnotif
 
 dependencies:
   axios: 0.21.1
   dotenv: 10.0.0
   fs-extra: 10.0.0
-  pronote-api: github.com/mirsella/pronote-api/7656e6cd39f466740a817ce66559b126d3da934b
+  pronote-api: github.com/mirsella/pronote-api/55c20a763b1d2b12c28df34ca804e438ebc22532
   telegramnotif: github.com/mirsella/telegramnotif/e839c1ea506641b325ef8de32519f75003db29ca
 
 devDependencies:
@@ -84,6 +84,14 @@ packages:
 
   /axios/0.21.1:
     resolution: {integrity: sha512-dKQiRHxGD9PPRIUNIWvZhPTPpl1rf/OxTYKsqKUDjBwYylTvV7SjSHJb9ratfyzM6wCdLCOYLzs73qpg5c4iGA==}
+    dependencies:
+      follow-redirects: 1.14.4
+    transitivePeerDependencies:
+      - debug
+    dev: false
+
+  /axios/0.21.4:
+    resolution: {integrity: sha512-ut5vewkiu8jjGBdqpM44XxjuCjq9LAKeHVmoVfHVzy8eHgxxq8SbAVQNovDA8mVi05kP0Ea/n/UzcSHcTJQfNg==}
     dependencies:
       follow-redirects: 1.14.4
     transitivePeerDependencies:
@@ -551,8 +559,8 @@ packages:
       word-wrap: 1.2.3
     dev: false
 
-  /pako/1.0.11:
-    resolution: {integrity: sha512-4hLB8Py4zZce5s4yd9XzopqwVv/yGNhV1Bl8NTmCq1763HeK2+EwVTv+leGeL13Dnh2wfbqowVPXCIO0z4taYw==}
+  /pako/2.0.4:
+    resolution: {integrity: sha512-v8tweI900AUkZN6heMU/4Uy4cXRc2AYNRggVmTR+dEncawDJgCdLMximOVA2p4qO57WMynangsfGRb5WD6L1Bg==}
     dev: false
 
   /parse5/6.0.1:
@@ -851,19 +859,19 @@ packages:
       cuint: 0.2.2
     dev: false
 
-  github.com/mirsella/pronote-api/7656e6cd39f466740a817ce66559b126d3da934b:
-    resolution: {tarball: https://codeload.github.com/mirsella/pronote-api/tar.gz/7656e6cd39f466740a817ce66559b126d3da934b}
+  github.com/mirsella/pronote-api/55c20a763b1d2b12c28df34ca804e438ebc22532:
+    resolution: {tarball: https://codeload.github.com/mirsella/pronote-api/tar.gz/55c20a763b1d2b12c28df34ca804e438ebc22532}
     name: pronote-api
-    version: 2.4.4
+    version: 2.4.5
     engines: {node: '>=11.14.0'}
     hasBin: true
     dependencies:
-      axios: 0.21.1
+      axios: 0.21.4
       body-parser: 1.19.0
       graphql: 15.5.3
       jsdom: 16.7.0
       node-forge: 0.6.33
-      pako: 1.0.11
+      pako: 2.0.4
       polka: 0.5.2
       string-strip-html: 8.3.0
       uuid: 8.3.2

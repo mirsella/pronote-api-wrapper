@@ -12,8 +12,8 @@
         "axios": "0.21.1",
         "dotenv": "10.0.0",
         "fs-extra": "^10.0.0",
-        "pronote-api": "git+https://github.com/mirsella/pronote-api",
-        "telegramnotif": "git+https://github.com/mirsella/telegramnotif"
+        "pronote-api": "github:mirsella/pronote-api",
+        "telegramnotif": "github:mirsella/telegramnotif"
     },
     "devDependencies": {
         "eslint-plugin-node": "11.1.0"
