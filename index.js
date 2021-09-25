@@ -138,10 +138,10 @@ const password = process.env.password;
 
     send('Marks :')
     for (const [index, subject] of data.marks.entries()) {
-        const notesId = lastdata.marks[index].marks.map(e => e.id)
+        const notesId = lastdata.marks[index]?.marks.map(e => e.id) || []
         for (const note of subject.marks) {
             if (!notesId.includes(note.id)) {
-                send(subject.name, note.title, note.value, '*', note.coefficient)
+                send(subject.name, note.title, note.coefficient, '*', note.value)
             }
         }
     }
