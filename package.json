@@ -16,8 +16,7 @@
         "telegramnotif": "github:mirsella/telegramnotif"
     },
     "devDependencies": {
-        "eslint-plugin-node": "11.1.0",
-        "nexe": "^4.0.0-beta.19"
+        "eslint-plugin-node": "11.1.0"
     },
     "engines": {
         "node": ">=16"
