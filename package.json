@@ -2,12 +2,9 @@
     "name": "pronote-api-wrapper",
     "version": "1.0.0",
     "description": "",
-    "main": "index.js",
     "scripts": {
         "test": "eslint index.js"
     },
-    "author": "",
-    "license": "ISC",
     "dependencies": {
         "axios": "0.21.1",
         "dotenv": "10.0.0",
@@ -17,8 +14,5 @@
     },
     "devDependencies": {
         "eslint-plugin-node": "11.1.0"
-    },
-    "engines": {
-        "node": ">=16"
     }
 }
